@@ -1,13 +1,13 @@
 public class Tree implements Tree_Interface{
 
-    private Node root;
+    private TreeNode root;
     private int TreeSize;
 
-    public Node getRoot() {
+    public TreeNode getRoot() {
         return root;
     }
 
-    public void setRoot(Node root) {
+    public void setRoot(TreeNode root) {
         this.root = root;
     }
 
