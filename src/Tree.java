@@ -22,6 +22,8 @@ public class Tree implements Tree_Interface{
     Tree(){
         this.setRoot(null);
     }
+    void insert(TreeNode newNode){
 
+    }
 
 }
