@@ -1,4 +1,4 @@
-public class Tree implements Tree_Interface{
+public class Tree implements Tree_Interface {
 
     private TreeNode root;
     private int TreeSize;
@@ -19,18 +19,16 @@ public class Tree implements Tree_Interface{
         this.TreeSize = treesize;
     }
 
-    Tree(){
+    Tree() {
         this.setRoot(null);
     }
-    void insert(TreeNode newNode){
-        if(root == null){
-            this.setRoot(newNode);
-        }
-        else{
-            
-            }
-        }
 
+    void insert(TreeNode newNode) {
+        if (root == null) {
+            this.setRoot(newNode);
+        } else {
+
+        }
     }
 
 }
