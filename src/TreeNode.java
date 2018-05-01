@@ -23,19 +23,19 @@ public class TreeNode extends Linkedlist{
     }
 
     public Node getLeft() {
-        return Left;
+        return this.Left;
     }
 
     public void setLeft(Node left) {
-        Left = left;
+        this.Left = left;
     }
 
     public Node getRight() {
-        return Right;
+        return this.Right;
     }
 
     public void setRight(Node right) {
-        Right = right;
+        this.Right = right;
     }
 
     //Constructor - Making an Node WITH a value, and NO Node to point to

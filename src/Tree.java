@@ -1,7 +1,7 @@
 public class Tree implements Tree_Interface{
 
     private Node root;
-    private int treesize;
+    private int TreeSize;
 
     public Node getRoot() {
         return root;
@@ -12,11 +12,11 @@ public class Tree implements Tree_Interface{
     }
 
     public int getTreesize() {
-        return treesize;
+        return this.TreeSize;
     }
 
     public void setTreesize(int treesize) {
-        this.treesize = treesize;
+        this.TreeSize = treesize;
     }
 
     Tree(){
