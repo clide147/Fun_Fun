@@ -40,7 +40,9 @@ public class TreeNode extends Linkedlist{
 
     //Constructor - Making an Node WITH a value, and NO Node to point to
     TreeNode(Object obj){
+        this.setLeft(null);
         this.setValue(obj);
+        this.setRight(null);
     }
 
 }

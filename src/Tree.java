@@ -20,7 +20,7 @@ public class Tree implements Tree_Interface{
     }
 
     Tree(){
-
+        this.setRoot(null);
     }
 
 
