@@ -23,6 +23,13 @@ public class Tree implements Tree_Interface{
         this.setRoot(null);
     }
     void insert(TreeNode newNode){
+        if(root == null){
+            this.setRoot(newNode);
+        }
+        else{
+            
+            }
+        }
 
     }
 
