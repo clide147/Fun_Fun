@@ -23,12 +23,30 @@ public class Tree implements Tree_Interface {
         this.setRoot(null);
     }
 
-    void insert(TreeNode newNode) {
-        if (root == null) {
-            this.setRoot(newNode);
-        } else {
+    private TreeNode addRecursive(TreeNode current, int value) {
+        if (current == null) {
+            return new TreeNode(value);
+        }
 
+        if (value < current.getValue()) {
+            current.setLeft(addRecursive(current.getLeft(), value));
+        } else if (value > current.getValue()) {
+            current.setRight(addRecursive(current.getRight(), value));
+        } else {
+            // value already exists
+            return current;
+        }
+
+        return current;
+    }
+    public void add(int value) {
+        this.setRoot(addRecursive(this.getRoot(), value));
+    }
+    public void traverseInOrder(TreeNode node) {
+        if (node != null) {
+            traverseInOrder(node.getLeft());
+            System.out.print(" " + node.getValue());
+            traverseInOrder(node.getRight());
         }
     }
-
 }
