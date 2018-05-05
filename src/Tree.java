@@ -49,4 +49,18 @@ public class Tree implements Tree_Interface {
             traverseInOrder(node.getRight());
         }
     }
+    public void traversePreOrder(TreeNode node) {
+        if (node != null) {
+            System.out.print(" " + node.getValue());
+            traversePreOrder(node.getLeft());
+            traversePreOrder(node.getRight());
+        }
+    }
+    public void traversePostOrder(TreeNode node) {
+        if (node != null) {
+            traversePostOrder(node.getLeft());
+            traversePostOrder(node.getRight());
+            System.out.print(" " + node.getValue());
+        }
+    }
 }

@@ -37,6 +37,10 @@ class Run{
         m.add(-1);
 
         m.traverseInOrder(m.getRoot());
+        System.out.print("\n");
+        m.traversePostOrder(m.getRoot());
+        System.out.print("\n");
+        m.traversePreOrder(m.getRoot());
      }
 
 
